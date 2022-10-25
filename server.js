@@ -11,8 +11,8 @@ import { Server } from "socket.io";
 
 
 /* App Config */
+const port = process.env.PORT || 3000;
 const app = express();
-const port = process.env.PORT || 5000;
 dotenv.config();
 
 /* Middleware -> Deals the Connections between database and the App */
